@@ -64,7 +64,7 @@ def main():
             except FileExistsError as identifier:
                 pass    
     else:
-        print('表里都没东西，你玩你m呢')
+        print('表格为空')
     # 新建循环事件，然后添加任务和协程
     loop = asyncio.get_event_loop()
     tasks = [get_image(id) for id in product_ids]
